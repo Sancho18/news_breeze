@@ -10,7 +10,7 @@ class NewsRepository {
       final response = await _dio.get(
         '${AppConstants.baseUrl}${AppConstants.topHeadlinesEndpoint}',
         queryParameters: {
-          'country': 'br',
+          'country': 'us',
           'apiKey': AppConstants.apiKey,
         },
       );
