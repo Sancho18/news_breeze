@@ -5,5 +5,5 @@ class AppConstants {
   
   // Sua chave da API (Nunca suba isso para repositórios públicos em apps reais de produção!)
   // Como é estudo, vamos colocar aqui, mas lembre-se do .env no futuro.
-  static const String apiKey = ''; 
+  static const String apiKey = 'SUA_CHAVE_DA_API_AQUI'; 
 }
