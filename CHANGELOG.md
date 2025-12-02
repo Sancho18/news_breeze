@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.0] - 2025-11-28
+
+### Adicionado
+- **Filtro de País:** Funcionalidade na `AppBar` permitindo alternar entre notícias dos EUA e do Brasil.
+- **UX (Empty State):** Implementação de mensagem amigável ("Nenhuma notícia encontrada") quando a API retorna uma lista vazia, evitando a tela branca.
+- **Lógica de Eventos:** Atualização do `LoadNewsEvent` para aceitar parâmetros de filtro.
+
+### Alterado
+- **Repositório:** Refatoração da lógica de busca (`NewsRepository`).
+  - `us` continua usando `top-headlines`.
+  - `br` passa a usar o endpoint `everything` com query específica para garantir resultados e contornar limitações da API gratuita.
+
 ## [0.1.0] - 2025-11-28
 
 ### Adicionado

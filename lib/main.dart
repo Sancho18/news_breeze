@@ -16,18 +16,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 1. Injetamos o Repositório (Dados)
     return RepositoryProvider(
       create: (context) => NewsRepository(),
-      
-      // 2. Injetamos o BLoC (Lógica), que depende do Repositório
       child: BlocProvider(
         create: (context) {
-          // Buscamos o repositório que acabamos de injetar acima
           final repository = context.read<NewsRepository>();
-          
-          // Criamos o BLoC e JÁ DISPARAMOS o evento inicial
-          // O '..add' é o operador cascade (executa e retorna o objeto)
           return NewsBloc(repository)..add(LoadNewsEvent());
         },
         child: MaterialApp(
