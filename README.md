@@ -63,6 +63,7 @@ lib/
 │   ├── screens/         # Telas
 │   └── widgets/         # Componentes visuais
 └── main.dart
+```
 
 ---
 
