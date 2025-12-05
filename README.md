@@ -39,6 +39,16 @@ Este projeto está sendo construído passo a passo para demonstrar a implementa�
 
 ---
 
+## ✨ Funcionalidades
+
+-   **Feed de Notícias:** -   Manchetes principais atualizadas em tempo real.
+    -   **Scroll Infinito:** Carregamento automático de mais notícias conforme o usuário rola a tela (Paginação).
+    -   **Filtro por Região:** Alternância rápida entre notícias dos EUA e Brasil.
+-   **Tratamento de Erros:** Feedback visual amigável para falhas de conexão ou listas vazias.
+-   **Performance:** Uso de Debounce e Cache de Imagens.
+
+---
+
 ## 📂 Estrutura de Pastas (Planejada)
 
 lib/
