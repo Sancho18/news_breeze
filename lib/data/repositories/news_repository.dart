@@ -5,7 +5,10 @@ import 'package:news_breeze/data/models/article_model.dart';
 class NewsRepository {
   final Dio _dio = Dio();
 
-  Future<List<Article>> getTopHeadlines({String country = 'us'}) async {
+  Future<List<Article>> getTopHeadlines({
+    String country = 'us',
+    int page = 1,
+  }) async {
     try {
       String endpoint;
       Map<String, dynamic> params = {'apiKey': AppConstants.apiKey};
@@ -18,6 +21,8 @@ class NewsRepository {
         params['q'] = 'tecnologia';
         params['language'] = 'pt';
         params['sortBy'] = 'publishedAt';
+        params['page'] = page;
+        params['pageSize'] = 20;
       }
 
       final response = await _dio.get(

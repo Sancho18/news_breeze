@@ -15,3 +15,5 @@ class LoadNewsEvent extends NewsEvent {
   @override
   List<Object> get props => [countryCode];
 }
+
+class LoadMoreNewsEvent extends NewsEvent {}

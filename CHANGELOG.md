@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.3.0] - 2025-12-05
+
+### Adicionado
+- **Scroll Infinito (Paginação):** Implementação de carregamento contínuo de notícias. O aplicativo agora busca automaticamente a próxima página da API quando o usuário chega ao final da lista.
+- **BLoC:**
+  - Novo evento `LoadMoreNewsEvent` para gerenciar requisições subsequentes.
+  - Atualização do estado `NewsLoaded` com a flag `hasReachedMax` para identificar o fim dos dados.
+  - Lógica de concatenação de listas (Imutabilidade: Lista Antiga + Lista Nova).
+- **Repositório:** Suporte a paginação dinâmica nos métodos de busca.
+- **UI:** Indicador visual de carregamento (Spinner) no rodapé da lista durante a busca de novas páginas.
+
+### Alterado
+- **HomeScreen:** Convertida para `StatefulWidget` para gerenciamento do `ScrollController`.
+
 ## [0.2.0] - 2025-11-28
 
 ### Adicionado
