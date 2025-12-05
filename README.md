@@ -51,6 +51,7 @@ Este projeto está sendo construído passo a passo para demonstrar a implementa�
 
 ## 📂 Estrutura de Pastas (Planejada)
 
+```text
 lib/
 ├── core/                # Configurações globais e utilitários
 ├── data/                # Camada de Dados (Model)
